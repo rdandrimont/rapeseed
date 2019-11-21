@@ -173,13 +173,13 @@ function wrapIt(img){
 
 //  2 . Add indices
 
-// ADD A NDVI BAND
+// ADD A NDYI BAND
 function addNdyi(img) {
   var nd = img.normalizedDifference(['green', 'blue']);
   return img.addBands(nd.float().rename('NDYI'));
 }
 
-// ADD A NDYI BAND
+// ADD A NDVI BAND
 function addNdvi(img) {
   var nd = img.normalizedDifference(['nir', 'red']);
   return img.addBands(nd.float().rename('NDVI'));
